@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Collab Video</title>
+    <script src="/resource/jquery.js" type="text/javascript"></script>
+    <script src="/resource/collab-video-master.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/resource/style.css" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div id="wrap-video">
+      <iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/{{vid}}?enablejsapi=1" frameborder="0"></iframe>
+      <p class="share-link">Share a synchronized video at: <br />
+      <a href="{{share_link}}" class="link">{{share_link}}</a></p>
+      <p class="trigger">
+        <a href="#">How it works</a> <i class="fa fa-plus-square-o" id="trigger-icon"></i>
+      </p>
+      <div class="toggle_container description">
+        <div class="block">
+          <p>The page is the master of a set of synchronized videos. The above link leads to a slave page with a synchronized version of the master video showing here. Any playback action from the master be reflected on those slave pages. Note: refreshing the current page window will create distinct masters.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

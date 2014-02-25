@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Collab Video</title>
+    <script src="/resource/collab-video-main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/resource/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css' />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $( document ).tooltip();
+      });
+    </script>
+    <style>
+      label {
+        display: inline-block;
+        width: 5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>
+        <span id="collab">Collab</span>
+        <i class="fa fa-youtube-play" id ="youtube-icon-title"></i>
+        <span id="video">Video</span>
+      </h1>
+      <div id="main">
+        <div>
+          <div id="search-bar">
+            <input id="input-vid" type="text" />
+            <button id="btn-create" class="button">Create</button>
+          </div>
+        </div>
+        <div class="description">
+          Enter YouTube <a class="my-tooltip" href="#" title="YouTube video ID can be found in the URL of any YouTube video link. For example, the URL 'https://www.youtube.com/watch?v=eA1b0EHltHE' indicates the video ID eA1b0EHltHE.">video ID</a> in the box above and hit <emph>Create</emph>, you will be redirected to a video page where you can playback the video and share synchronized version of it to your friends on other computers.
+        </div>
+      </div>
+      <div class="footer">
+        Report bug to <a class="link" href="mailto:lxlstudent@gmail.com">lxlstudent@gmail.com</a>
+      </div>
+    </div>
+  </body>
+</html>
