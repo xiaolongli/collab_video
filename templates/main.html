@@ -2,25 +2,14 @@
 <html>
   <head>
     <title>Collab Video</title>
-    <script src="/resource/collab-video-main.js" type="text/javascript"></script>
     <link rel="stylesheet" href="/resource/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css' />
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/resource/tooltip-lite.css" />
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script>
-      $(function() {
-        $( document ).tooltip();
-      });
-    </script>
-    <style>
-      label {
-        display: inline-block;
-        width: 5em;
-      }
-    </style>
+    <script src="/resource/collab-video-main.js" type="text/javascript"></script>
+    <script src="/resource/tooltip-lite.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -37,12 +26,13 @@
           </div>
         </div>
         <div class="description">
-          Enter YouTube <a class="my-tooltip" href="#" title="YouTube video ID can be found in the URL of any YouTube video link. For example, the URL 'https://www.youtube.com/watch?v=eA1b0EHltHE' indicates the video ID eA1b0EHltHE.">video ID</a> in the box above and hit <emph>Create</emph>, you will be redirected to a video page where you can playback the video and share synchronized version of it to your friends on other computers.
+          Enter YouTube <a class="my-tooltip" id="tooltipref-videoid">video ID</a> in the box above and hit <emph>Create</emph>, you will be redirected to a video page where you can playback the video and share synchronized version of it to your friends on other computers.
         </div>
       </div>
       <div class="footer">
         Report bug to <a class="link" href="mailto:lxlstudent@gmail.com">lxlstudent@gmail.com</a>
       </div>
     </div>
+    <div class="tooltip-lite" data-target="tooltipref-videoid" data-width="300px" data-orientation="south" data-border="1px solid #165050" data-background-color="#063030">YouTube video ID can be found in the URL of any YouTube video link. For example, the URL <span style="color:#dba273">https://www.youtube.com/watch?v=eA1b0EHltHE</span> indicates the video ID <span style="color:#dba273">eA1b0EHltHE</span>.</div>
   </body>
 </html>

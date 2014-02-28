@@ -1,0 +1,19 @@
+.tooltip-lite {
+  display: none;
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  word-wrap:break-word;
+
+  /* customizable properties */
+  box-shadow: 1px 1px 2px #686868;
+  background-color: #404040;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #D8D8D8;
+}
+
+body {
+  position: relative;
+}
