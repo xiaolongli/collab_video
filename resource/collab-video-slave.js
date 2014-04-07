@@ -17,7 +17,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 window.onload = function() {
-  var id = document.getElementById("id").innerText;
+  var id = $("#id").data("id");
   var last_timestamp = 0;
   var tolerance = 2;
   var pause_seek_timeout = null;
@@ -46,6 +46,7 @@ window.onload = function() {
   }
 
   function long_polling() {
+    console.log("ajax return handling...");
     if (!synced) {
       return;
     }
@@ -62,6 +63,7 @@ window.onload = function() {
           last_timestamp = timestamp;
           switch(evt) {
           case "pause":
+            console.log("handle pause event: " + playtime);
             if (player.getPlayerState() != YT.PlayerState.PLAYING
                 || player.getCurrentTime > playtime) {
               pause_seek(playtime);

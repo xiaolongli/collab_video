@@ -104,6 +104,7 @@ class SlaveHandler(BaseHandler):
   def post(self):
     last_timestamp = self.request.get("last_timestamp")
     self.id = self.request.get("id")
+    logging.error("arguments are %s" % self.request.arguments())
     if (not self.id):
       logging.error("error: master event post without id")
       self.abort(400)
